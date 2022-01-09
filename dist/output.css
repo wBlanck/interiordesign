@@ -642,6 +642,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 46px;
 }
 
+.text-\[43px\] {
+  font-size: 43px;
+}
+
 .font-bold {
   font-weight: 700;
 }
