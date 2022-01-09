@@ -596,7 +596,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-hero-img-mobile {
-  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('/assets/hero-bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('../assets/hero-bg.jpg');
 }
 
 .bg-cover {
@@ -704,7 +704,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .tablet\:bg-hero-img {
-    background-image: url('/assets/hero-bg.jpg');
+    background-image: url('../assets/hero-bg.jpg');
   }
 
   .tablet\:py-12 {
