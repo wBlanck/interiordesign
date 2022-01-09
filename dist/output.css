@@ -511,8 +511,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -525,6 +533,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .items-center {
@@ -545,7 +557,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-hero-img {
-  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url(/assets/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url(/assets/hero-bg.jpg);
 }
 
 .bg-cover {
@@ -587,9 +599,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .font-bold {
@@ -602,6 +613,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-black {
   font-weight: 900;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-primary-heading {
@@ -617,9 +632,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px) {
   .tablet\:flex {
     display: flex;
-  }
-
-  .tablet\:text-\[54px\] {
-    font-size: 54px;
   }
 }

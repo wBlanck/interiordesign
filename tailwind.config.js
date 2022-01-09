@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-img":
-          "linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url(/assets/hero-bg.jpg)",
+          "linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url(/assets/hero-bg.jpg)",
       },
     },
   },
