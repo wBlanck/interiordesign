@@ -2,8 +2,8 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     screens: {
-      tablet: "640px",
-      // => @media (min-width: 640px) { ... }
+      tablet: { raw: "(min-width: 768px)" },
+      default: "1200px",
     },
     colors: {
       "footer-bg": "#3A5F5F",
