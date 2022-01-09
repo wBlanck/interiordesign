@@ -11,7 +11,7 @@ module.exports = {
       "secondary-heading": "#3D3D3F",
       "primary-text": "#5F5F64",
       white: "#fff",
-      "hero-bg": "rgba(255, 255, 255, 0.4)",
+      "hero-bg": "rgba(255, 255, 255, 0.5)",
     },
     fontFamily: {
       noto: ["'Noto Serif JP'", "sans-serif"],
@@ -24,7 +24,7 @@ module.exports = {
         "hero-img": "url(/assets/hero-bg.jpg)",
       },
       dropShadow: {
-        bawx: "0px 4px 4px rgba(0, 0, 0, 0.25);",
+        test: "25px 25px 25px rgba(0, 0, 0, 1);",
       },
     },
   },

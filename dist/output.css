@@ -492,8 +492,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-1\/2 {
+  right: 50%;
 }
 
 .z-10 {
@@ -533,8 +537,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.h-\[7vmax\] {
+  height: 7vmax;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[7vmax\] {
+  width: 7vmax;
 }
 
 .max-w-7xl {
@@ -543,6 +555,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[1536px\] {
   max-width: 1536px;
+}
+
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -621,8 +638,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-\[50px\] {
-  font-size: 50px;
+.text-\[46px\] {
+  font-size: 46px;
 }
 
 .font-bold {
@@ -651,88 +668,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:-left-1\/2::before {
-  content: var(--tw-content);
-  left: -50%;
-}
-
-.before\:top-0::before {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.before\:-z-10::before {
-  content: var(--tw-content);
-  z-index: -10;
-}
-
-.before\:h-screen::before {
-  content: var(--tw-content);
-  height: 100vh;
-}
-
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.before\:w-\[100\%\]::before {
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.before\:w-full::before {
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.before\:bg-hero-bg::before {
-  content: var(--tw-content);
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.before\:bg-white::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.before\:bg-hero-img-mobile::before {
-  content: var(--tw-content);
-  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url(/assets/hero-bg.jpg);
-}
-
-.before\:bg-cover::before {
-  content: var(--tw-content);
-  background-size: cover;
-}
-
-.before\:bg-center::before {
-  content: var(--tw-content);
-  background-position: center;
-}
-
-.before\:bg-no-repeat::before {
-  content: var(--tw-content);
-  background-repeat: no-repeat;
-}
-
 @media (min-width: 768px) {
+  .tablet\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .tablet\:right-0 {
+    right: 0px;
+  }
+
   .tablet\:block {
     display: block;
   }
 
-  .tablet\:w-\[400px\] {
-    width: 400px;
+  .tablet\:w-\[420px\] {
+    width: 420px;
   }
 
-  .tablet\:w-\[500px\] {
-    width: 500px;
+  .tablet\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .tablet\:justify-self-start {
@@ -744,13 +699,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .tablet\:bg-hero-bg {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
   .tablet\:bg-hero-img {
     background-image: url(/assets/hero-bg.jpg);
   }
 
-  .tablet\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .tablet\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .tablet\:pr-11 {
@@ -807,15 +766,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .tablet\:before\:bg-hero-img::before {
+  .before\:tablet\:drop-shadow-2xl::before {
     content: var(--tw-content);
-    background-image: url(/assets/hero-bg.jpg);
+    --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
 
 @media (min-width: 1280px) {
   .default\:top-\[64px\] {
     top: 64px;
+  }
+
+  .default\:bottom-16 {
+    bottom: 4rem;
   }
 
   .default\:flex {
@@ -827,20 +791,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .default\:h-\[85vh\] {
-    height: 85vh;
-  }
-
-  .default\:overflow-visible {
-    overflow: visible;
-  }
-
-  .default\:before\:top-\[64px\]::before {
-    content: var(--tw-content);
-    top: 64px;
-  }
-
-  .default\:before\:h-\[85vh\]::before {
-    content: var(--tw-content);
     height: 85vh;
   }
 }
