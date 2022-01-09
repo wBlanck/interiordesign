@@ -16,17 +16,17 @@
   <body class="font-montserrat">
     <!-- HEADER -->
     <header
-      class="container mx-auto px-4 py-4 flex items-center gap-5 fixed z-10 bg-white top-0 left-0 right-0"
+      class="fixed top-0 left-0 right-0 z-10 flex items-center gap-5 px-4 py-4 mx-auto bg-white max-w-7xl"
     >
-      <a href="" class="font-noto text-primary-heading font-bold text-2xl"
+      <a href="" class="text-2xl font-bold font-noto text-primary-heading"
         >furni.shop</a
       >
       <!-- NAV -->
-      <nav class="hidden tablet:flex mx-auto gap-10">
-        <a href="#" class="font-montserrat font-medium">Home</a>
-        <a href="#" class="font-montserrat font-medium">About</a>
-        <a href="#" class="font-montserrat font-medium">Features</a>
-        <a href="#" class="font-montserrat font-medium">Contact</a>
+      <nav class="hidden gap-10 ml-auto default:flex">
+        <a href="#" class="font-medium font-montserrat">Home</a>
+        <a href="#" class="font-medium font-montserrat">About</a>
+        <a href="#" class="font-medium font-montserrat">Features</a>
+        <a href="#" class="font-medium font-montserrat">Contact</a>
       </nav>
       <!-- SEARCH ICON -->
       <svg
@@ -35,7 +35,7 @@
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="ml-auto cursor-pointer"
+        class="ml-auto cursor-pointer default:hidden"
       >
         <path
           d="M9.10855 18.2134C11.3088 18.2134 13.3297 17.4263 14.9076 16.123L18.5685 19.784C18.7113 19.9268 18.898 20 19.0847 20C19.2715 20 19.4582 19.9268 19.601 19.784C19.8865 19.4984 19.8865 19.0335 19.601 18.7479L15.9546 15.1016C17.3604 13.4981 18.2134 11.4003 18.2134 9.10855C18.2134 4.08567 14.1278 0 9.10489 0C4.08201 0 0 4.08201 0 9.10489C0 14.1278 4.08567 18.2134 9.10855 18.2134ZM9.10855 1.46074C13.3223 1.46074 16.7527 4.88742 16.7527 9.10489C16.7527 13.3223 13.3223 16.749 9.10855 16.749C4.89475 16.749 1.4644 13.3187 1.4644 9.10489C1.4644 4.89109 4.89475 1.46074 9.10855 1.46074Z"
@@ -44,7 +44,7 @@
       </svg>
 
       <!-- HAMBURGER -->
-      <div class="cursor-pointer">
+      <div class="cursor-pointer default:hidden">
         <svg
           width="22"
           height="17"
@@ -65,17 +65,27 @@
         </svg>
       </div>
     </header>
+    <!-- HERO BG -->
+    <div
+      class="left-0 right-0 mx-auto w-full tablet:bg-hero-img overflow-hidden max-w-[1536px] h-screen absolute -z-10 default:h-[85vh] default:top-[64px] bg-cover bg-hero-img-mobile bg-center bg-no-repeat"
+    ></div>
     <!-- HERO SECTION -->
     <section
-      class="overflow-hidden container px-4 py-4 h-screen relative before:-z-10 before:left-[-10%] before:absolute before:w-[120%] before:h-[100vh] before:bg-hero-img before:bg-center before:bg-no-repeat before:bg-cover mx-auto grid place-content-center"
+      class="relative grid h-screen mx-auto max-w-7xl place-items-center"
     >
       <img src="assets/hero-bg.jpg" alt="interior" class="hidden" />
       <!-- TEXT CONTENT -->
-      <div class="text-center text-white">
-        <h1 class="font-noto text-[50px] font-black leading-tight mb-8">
-          We Help You Make Modern Interior
+      <div
+        class="relative w-full px-4 text-center text-white max-w-7xl tablet:text-left tablet:py-6 tablet:pr-11 tablet:justify-self-start tablet:w-[400px] tablet:bg-white tablet:drop tablet:before:bg-white tablet:before:h-full tablet:before:w-full tablet:before:absolute tablet:before:-left-1/2 tablet:before:top-0 tablet:before:-z-10"
+      >
+        <h1
+          class="font-noto text-[50px] font-black leading-tight mb-8 tablet:text-primary-heading"
+        >
+          We Help You <br class="hidden tablet:block" />
+          Make Modern <br class="hidden tablet:block" />
+          Interior
         </h1>
-        <p class="">
+        <p class="tablet:text-primary-text">
           We will help you to make an elegant and luxurious interior designed by
           professional interior designer.
         </p>
@@ -83,7 +93,7 @@
       <!-- SCROLL DOWN BTN -->
       <a
         href="#"
-        class="absolute left-0 right-0 bottom-5 grid place-content-center cursor-pointer"
+        class="absolute left-0 right-0 grid cursor-pointer bottom-5 place-content-center"
       >
         <svg
           width="24"

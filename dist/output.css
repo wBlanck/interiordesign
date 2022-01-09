@@ -468,16 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -510,6 +500,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -539,12 +533,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-\[1536px\] {
+  max-width: 1536px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .place-content-center {
   place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -566,6 +576,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-hero-img-mobile {
+  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url(/assets/hero-bg.jpg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-4 {
@@ -630,14 +656,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
-.before\:top-\[64px\]::before {
+.before\:-left-1\/2::before {
   content: var(--tw-content);
-  top: 64px;
+  left: -50%;
 }
 
-.before\:left-\[-10\%\]::before {
+.before\:top-0::before {
   content: var(--tw-content);
-  left: -10%;
+  top: 0px;
 }
 
 .before\:-z-10::before {
@@ -645,19 +671,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: -10;
 }
 
-.before\:h-\[85vh\]::before {
-  content: var(--tw-content);
-  height: 85vh;
-}
-
-.before\:h-\[100vh\]::before {
+.before\:h-screen::before {
   content: var(--tw-content);
   height: 100vh;
 }
 
-.before\:w-\[120\%\]::before {
+.before\:h-full::before {
   content: var(--tw-content);
-  width: 120%;
+  height: 100%;
 }
 
 .before\:w-\[100\%\]::before {
@@ -665,7 +686,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.before\:bg-hero-img::before {
+.before\:w-full::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:bg-hero-bg::before {
+  content: var(--tw-content);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.before\:bg-white::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.before\:bg-hero-img-mobile::before {
   content: var(--tw-content);
   background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url(/assets/hero-bg.jpg);
 }
@@ -686,7 +723,124 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .tablet\:flex {
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .tablet\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .tablet\:justify-self-start {
+    justify-self: start;
+  }
+
+  .tablet\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .tablet\:bg-hero-img {
+    background-image: url(/assets/hero-bg.jpg);
+  }
+
+  .tablet\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .tablet\:pr-11 {
+    padding-right: 2.75rem;
+  }
+
+  .tablet\:text-left {
+    text-align: left;
+  }
+
+  .tablet\:text-primary-heading {
+    --tw-text-opacity: 1;
+    color: rgb(36 77 77 / var(--tw-text-opacity));
+  }
+
+  .tablet\:text-primary-text {
+    --tw-text-opacity: 1;
+    color: rgb(95 95 100 / var(--tw-text-opacity));
+  }
+
+  .tablet\:before\:absolute::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+
+  .tablet\:before\:-left-1\/2::before {
+    content: var(--tw-content);
+    left: -50%;
+  }
+
+  .tablet\:before\:top-0::before {
+    content: var(--tw-content);
+    top: 0px;
+  }
+
+  .tablet\:before\:-z-10::before {
+    content: var(--tw-content);
+    z-index: -10;
+  }
+
+  .tablet\:before\:h-full::before {
+    content: var(--tw-content);
+    height: 100%;
+  }
+
+  .tablet\:before\:w-full::before {
+    content: var(--tw-content);
+    width: 100%;
+  }
+
+  .tablet\:before\:bg-white::before {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .tablet\:before\:bg-hero-img::before {
+    content: var(--tw-content);
+    background-image: url(/assets/hero-bg.jpg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .default\:top-\[64px\] {
+    top: 64px;
+  }
+
+  .default\:flex {
     display: flex;
+  }
+
+  .default\:hidden {
+    display: none;
+  }
+
+  .default\:h-\[85vh\] {
+    height: 85vh;
+  }
+
+  .default\:overflow-visible {
+    overflow: visible;
+  }
+
+  .default\:before\:top-\[64px\]::before {
+    content: var(--tw-content);
+    top: 64px;
+  }
+
+  .default\:before\:h-\[85vh\]::before {
+    content: var(--tw-content);
+    height: 85vh;
   }
 }
