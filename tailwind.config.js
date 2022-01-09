@@ -20,8 +20,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-img-mobile":
-          "linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url(assets/hero-bg.jpg)",
-        "hero-img": "url(assets/hero-bg.jpg)",
+          "linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('/assets/hero-bg.jpg')",
+        "hero-img": "url('/assets/hero-bg.jpg')",
       },
       dropShadow: {
         test: "25px 25px 25px rgba(0, 0, 0, 1);",
