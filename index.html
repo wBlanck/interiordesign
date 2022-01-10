@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,7 +25,7 @@
   </head>
   <body class="font-montserrat">
     <!-- HEADER -->
-    <header class="fixed top-0 left-0 right-0 z-10 bg-white">
+    <header id="home" class="fixed top-0 left-0 right-0 z-10 bg-white">
       <div class="flex items-center gap-5 px-4 py-4 mx-auto max-w-7xl">
         <a href="" class="text-2xl font-bold font-noto text-primary-heading"
           >furni.shop</a
@@ -33,7 +33,7 @@
         <!-- NAV -->
         <nav class="hidden gap-10 ml-auto default:flex">
           <a href="#" class="font-medium font-montserrat">Home</a>
-          <a href="#" class="font-medium font-montserrat">About</a>
+          <a href="#about" class="font-medium font-montserrat">About</a>
           <a href="#" class="font-medium font-montserrat">Features</a>
           <a href="#" class="font-medium font-montserrat">Contact</a>
         </nav>
@@ -161,7 +161,7 @@
     </section>
 
     <!-- HOT DEALS SECTION -->
-    <section class="px-4 py-16 mx-auto max-w-7xl">
+    <section class="px-4 py-16 mx-auto max-w-7xl tablet:py-24">
       <div
         class="flex flex-col text-center default:flex-row default:justify-between"
       >
@@ -260,6 +260,98 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section
+      id="about"
+      class="relative px-4 py-16 mx-auto text-center max-w-7xl default:text-left tablet:py-24"
+    >
+      <!-- HEADINGS -->
+      <div class="relative mb-10 default:py-20">
+        <h2
+          class="mb-8 text-5xl font-bold leading-none text-primary-heading font-noto tablet:mb-5"
+        >
+          About Us
+        </h2>
+        <p class="text-xl text-primary-text default:max-w-[450px]">
+          At Besnik Consultancy, we take pride in our values – service,
+          integrity, and excellence.
+        </p>
+        <!-- BUTTON -->
+        <button
+          class="hidden default:block absolute right-0 font-semibold cursor-pointer top-20 bg-[#F4F6F6] text-primary-text py-4 px-8 rounded-md shadow-xl"
+        >
+          Learn more
+        </button>
+      </div>
+      <!-- CONTENT -->
+      <div
+        class="flex flex-wrap justify-evenly gap-[5vmin] max-w-[700px] mx-auto default:mx-0"
+      >
+        <div class="max-w-[300px]">
+          <h3 class="mb-3 text-2xl font-bold text-primary-heading">
+            <span class="block text-6xl font-bold leading-snug">1.</span>Who We
+            Are
+          </h3>
+          <p class="leading-normal text-primary-text">
+            You get a 2-week free trial to kick the Smarty tries. We want you
+            to.
+          </p>
+        </div>
+        <!-- 2 -->
+        <div class="max-w-[300px]">
+          <h3 class="mb-3 text-2xl font-bold text-primary-heading">
+            <span class="block text-6xl font-bold leading-snug">2.</span>What Do
+            We Do
+          </h3>
+          <p class="leading-normal text-primary-text">
+            We give you a free course that guides you through the process.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div class="max-w-[300px]">
+          <h3 class="mb-3 text-2xl font-bold text-primary-heading">
+            <span class="block text-6xl font-bold leading-snug">3.</span>How Do
+            We Help
+          </h3>
+          <p class="leading-normal text-primary-text">
+            Use our multimedia lecturers, videos, and coaching sessions.
+          </p>
+        </div>
+        <!-- 4 -->
+        <div class="max-w-[300px]">
+          <h3 class="mb-3 text-2xl font-bold text-primary-heading">
+            <span class="block text-6xl font-bold leading-snug">4.</span>Create
+            success story
+          </h3>
+          <p class="leading-normal text-primary-text">
+            With access to online learning resources anyone can transfrm.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMG GRID -->
+      <div
+        class="hidden max-w-lg grid-cols-2 grid-rows-3 default:grid max-h-[500px] gap-6 absolute right-0 top-1/2 -translate-y-[15%]"
+      >
+        <img
+          class="object-cover w-full h-full mt-10"
+          src="assets/1.jpg"
+          alt=""
+        />
+        <img
+          class="object-cover w-full h-full row-span-2"
+          src="assets/2.jpg"
+          alt=""
+        />
+        <img
+          class="object-cover w-full h-full row-span-2 mt-10"
+          src="assets/3.jpg"
+          alt=""
+        />
+        <img class="object-cover w-full h-full" src="assets/4.jpg" alt="" />
       </div>
     </section>
   </body>
