@@ -521,6 +521,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -549,12 +553,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vmax;
 }
 
+.w-4\/6 {
+  width: 66.666667%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
 
 .max-w-\[1536px\] {
   max-width: 1536px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .translate-x-1\/2 {
@@ -564,6 +576,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-content-center {
@@ -576,6 +592,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-5 {
@@ -593,6 +613,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-companies-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 246 246 / var(--tw-bg-opacity));
 }
 
 .bg-hero-img-mobile {
@@ -621,6 +646,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -640,6 +670,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[43px\] {
   font-size: 43px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -666,6 +701,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#031745\] {
+  --tw-text-opacity: 1;
+  color: rgb(3 23 69 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -792,5 +832,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .default\:h-\[85vh\] {
     height: 85vh;
+  }
+
+  .default\:max-w-\[120px\] {
+    max-width: 120px;
+  }
+
+  .default\:justify-between {
+    justify-content: space-between;
+  }
+
+  .default\:gap-0 {
+    gap: 0px;
   }
 }

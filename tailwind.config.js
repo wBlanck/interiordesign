@@ -12,6 +12,7 @@ module.exports = {
       "primary-text": "#5F5F64",
       white: "#fff",
       "hero-bg": "rgba(255, 255, 255, 0.5)",
+      "companies-bg": "#F4F6F6",
     },
     fontFamily: {
       noto: ["'Noto Serif JP'", "sans-serif"],
